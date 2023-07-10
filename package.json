@@ -1,0 +1,15 @@
+{
+  "name": "language-ahkpp",
+  "version": "0.0.0",
+  "description": "ahkpp grammar",
+  "keywords": [
+    "bacadra",
+    "ahkpp",
+    "language"
+  ],
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/bacadra/atom-language-ahkpp",
+  "url": "https://github.com/bacadra/atom-language-ahkpp",
+  "repository": "https://github.com/bacadra/atom-language-ahkpp",
+  "license": "MIT"
+}

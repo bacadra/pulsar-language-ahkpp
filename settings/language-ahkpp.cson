@@ -1,0 +1,6 @@
+'.source.ahk':
+  editor:
+    tabLength: 2
+    commentStart: '; '
+    increaseIndentPattern: '^((?!;).)*\\{[^}]*$'
+    decreaseIndentPattern: '^\\s*((?!;)[^{])*\\}.*$'
