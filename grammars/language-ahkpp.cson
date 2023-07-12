@@ -1,6 +1,7 @@
 name: 'AutoHotkey++'
 scopeName: 'source.ahk'
 injectionSelector: 'source.embedded.ahk'
+limitLineLength: false
 fileTypes: [
   'ahk'
 ]
