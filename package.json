@@ -7,9 +7,12 @@
     "ahkpp",
     "language"
   ],
+  "engines": {
+    "atom": ">=1.100.0 <2.0.0"
+  },  
   "readmeFilename": "README.md",
-  "homepage": "https://github.com/bacadra/atom-language-ahkpp",
-  "url": "https://github.com/bacadra/atom-language-ahkpp",
-  "repository": "https://github.com/bacadra/atom-language-ahkpp",
+  "homepage": "https://github.com/bacadra/pulsar-language-ahkpp",
+  "url": "https://github.com/bacadra/pulsar-language-ahkpp",
+  "repository": "https://github.com/bacadra/pulsar-language-ahkpp",
   "license": "MIT"
 }
