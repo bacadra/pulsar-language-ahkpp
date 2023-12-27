@@ -1,6 +1,6 @@
 {
   "name": "language-ahkpp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ahkpp grammar",
   "keywords": [
     "bacadra",
@@ -9,7 +9,7 @@
   ],
   "engines": {
     "atom": ">=1.100.0 <2.0.0"
-  },  
+  },
   "readmeFilename": "README.md",
   "homepage": "https://github.com/bacadra/pulsar-language-ahkpp",
   "url": "https://github.com/bacadra/pulsar-language-ahkpp",
