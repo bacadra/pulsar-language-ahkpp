@@ -1,6 +1,7 @@
-'.source.ahk':
+'.source.ahk1, .source.ahk2':
   editor:
     tabLength: 2
     commentStart: '; '
     increaseIndentPattern: '^((?!;).)*\\{[^}]*$'
     decreaseIndentPattern: '^\\s*((?!;)[^{])*\\}.*$'
+    indentNextLinePattern: "^\\s*(if|ifmsgbox|else|loop|for|while|catch|If|IfMsgBox|Else|Loop|For|While|Catch)\\b"

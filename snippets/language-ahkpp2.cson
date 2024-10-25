@@ -1,0 +1,8 @@
+'.source.ahk2':
+  AhkTemplateV2:
+    prefix: '#TEMPLATEv2'
+    body: [
+      '#Requires AutoHotkey v2.0'
+      ''
+      ''
+    ]

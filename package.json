@@ -1,7 +1,7 @@
 {
   "name": "language-ahkpp",
   "version": "0.0.3",
-  "description": "ahkpp grammar",
+  "description": "Syntax highlighting for AutoHotKey v1 & v2",
   "keywords": [
     "bacadra",
     "ahkpp",

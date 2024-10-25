@@ -1,10 +1,8 @@
-name: 'AutoHotkey++'
-scopeName: 'source.ahk'
-injectionSelector: 'source.embedded.ahk'
-limitLineLength: false
 fileTypes: [
   'ahk'
 ]
+name: 'AutoHotkey v1'
+scopeName: 'source.ahk1'
 patterns: [
   {
     include: '#comment'
@@ -36,9 +34,9 @@ repository:
     patterns: [
       {
         captures:
-          '1':
+          '2':
             name: 'punctuation.definition.comment.ahk'
-        match: '(?<=^|\\s+)(;).*'
+        match: '(^\\s*|\\s+)(;).*'
         name: 'comment.line.semicolon.ahk'
         example: ';comment'
       }
@@ -147,7 +145,7 @@ repository:
             name: 'string.parameter.directives.ahk'
           '2':
             name: 'comment.line.semicolon.directive.ahk'
-        match: '#\\b(?i:allowsamelinecomments|clipboardtimeout|commentflag|errorstdout|escapechar|hotkeyinterval|hotkeymodifiertimeout|hotstring|iftimeout|ifwinactive|ifwinexist|ifwinnotactive|ifwinnotexist|inputlevel|installkeybdhook|installmousehook|keyhistory|ltrim|maxhotkeysperinterval|maxmem|maxthreads|maxthreadsbuffer|maxthreadsperhotkey|menumaskkey|noenv|notrayicon|persistent|requires|singleinstance|usehook|warn|winactivateforce)\\b(.*?)(\\s+;.*)?$'
+        match: '#\\b(?i:allowsamelinecomments|clipboardtimeout|commentflag|delimiter|derefchar|errorstdout|escapechar|hotkeyinterval|hotkeymodifiertimeout|hotstring|iftimeout|ifwinactive|ifwinexist|ifwinnotactive|ifwinnotexist|inputlevel|installkeybdhook|installmousehook|keyhistory|ltrim|maxhotkeysperinterval|maxmem|maxthreads|maxthreadsbuffer|maxthreadsperhotkey|menumaskkey|noenv|notrayicon|persistent|requires|singleinstance|usehook|warn|winactivateforce)\\b(.*?)(\\s+;.*)?$'
         name: 'keyword.control.directives.ahk'
         example: '#persistent'
       }
@@ -246,6 +244,10 @@ repository:
       }
       {
         match: '(?i)\\b(?<=\\bFormatTime\\b\\s*,?[^,]+,[^,]*,\\s*)(Time|ShortDate|LongDate|YearMonth|YDay|YDay0|WDay|YWeek)\\b'
+        name: 'keyword.other.ahk'
+      }
+      {
+        match: '(?i)\\b(?<=\\bGetKeyState\\b\\s*,?[^,]+,[^,]+,\\s*)(P|T)\\b'
         name: 'keyword.other.ahk'
       }
       {
@@ -381,7 +383,19 @@ repository:
         name: 'keyword.other.ahk'
       }
       {
+        match: '(?i)\\b(?<=\\bInputBox\\b\\s*,?[^,]+,[^,]+,[^,]+,\\s*)(HIDE)\\b'
+        name: 'keyword.other.ahk'
+      }
+      {
         match: '(?i)\\b(?<=\\bLoop\\b\\s*,?\\s*)(Files|Parse|Read|Reg)\\b'
+        name: 'keyword.other.ahk'
+      }
+      {
+        match: '(?i)\\b(?<=\\bLoop\\b\\s*,?\\s*Files\\s*,[^,]+,\\s*)(DF?R?|DR?F?|FD?R?|FR?D?|RD?F?|RF?D?)\\b'
+        name: 'keyword.other.ahk'
+      }
+      {
+        match: '(?i)\\b(?<=\\bLoop\\b\\s*,?\\s*Parse\\s*,[^,]+,\\s*)(CSV)\\b'
         name: 'keyword.other.ahk'
       }
       {
@@ -482,6 +496,10 @@ repository:
       }
       {
         match: '(?i)\\b(?<=\\bSetTimer\\b\\s*,?[^,]*,\\s*)(On|Off|Delete)\\b'
+        name: 'keyword.other.ahk'
+      }
+      {
+        match: '(?i)\\b(?<=\\bSetTitleMatchMode\\b\\s*,?\\s*)(RegEx|Fast|Slow)\\b'
         name: 'keyword.other.ahk'
       }
       {

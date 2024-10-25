@@ -1,11 +1,15 @@
 # language-ahkpp
 
-AutoHotkey Plus Plus provides AutoHotkey language support for Pulsar. This package is port of [AutoHotkey Plus Plus for VS Code](https://github.com/mark-wiemer-org/ahkpp).
+Syntax highlighting for AutoHotKey v1 & v2. A two grammars are provided separately for both versions. A grammar v1 is used by default, but if first line of text-editor match regex `\#Requires +AutoHotkey +v2.*` then grammar v2 is used.
 
 ## Installation
 
-Run `ppm install bacadra/pulsar-language-ahkpp` to install a package directly from Github repository.
+To install `language-ahkpp` search for [language-ahkpp](https://web.pulsar-edit.dev/packages/language-ahkpp) in the Install pane of the Pulsar settings or run `ppm install language-ahkpp`. Alternatively, you can run `ppm install bacadra/pulsar-language-ahkpp` to install a package directly from the Github repository.
 
 # Contributing
 
-If you have any ideas on how to improve the package, spot any bugs, or would like to support the development of new features, please feel free to share them via GitHub.
+Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub — any feedback’s welcome!
+
+## Notes
+
+This package is port of [AutoHotkey Plus Plus for VS Code](https://github.com/mark-wiemer-org/ahkpp).
